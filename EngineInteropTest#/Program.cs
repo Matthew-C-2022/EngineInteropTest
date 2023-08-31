@@ -31,7 +31,7 @@ public class Program
         IntPtr[] array2 = new IntPtr[2];
         PrintToConsoleCDelegate del = PrintToConsoleC;
         array2[0] = Marshal.GetFunctionPointerForDelegate(del);
-        ExterFuncs(42069, array1, array2);
+        ExterFuncs(40000, array1, array2);
 
         FunctionTest PrintNum = (FunctionTest)Marshal.GetDelegateForFunctionPointer(array1[1], typeof(FunctionTest));
         FunctionPrintText PrintText = (FunctionPrintText)Marshal.GetDelegateForFunctionPointer(array1[0], typeof(FunctionPrintText));
