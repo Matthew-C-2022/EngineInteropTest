@@ -11,7 +11,7 @@ extern "C"
 void ExterFuncs(int hash, void** Import, void** Export)
 {
     printf("Function Called\n");
-    if (hash != 42069)
+    if (hash != 40000)
     {
         printf("ERROR HASH KEY INCORRECT");
         return;
